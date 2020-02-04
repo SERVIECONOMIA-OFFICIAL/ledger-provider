@@ -5,7 +5,7 @@ import { ledgerEthereumBrowserClientFactoryAsync } from '@0x/subproviders/lib/sr
 import { LedgerSubprovider } from '@0x/subproviders/lib/src/subproviders/ledger';
 import { RPCSubprovider } from '@0x/subproviders/lib/src/subproviders/rpc_subprovider';
 
-export interface ILedgerConnectorOptions {
+export interface ILedgerProviderOptions {
   chainId: number;
   rpcUrl: string;
   accountFetchingConfigs?: any;
@@ -15,7 +15,7 @@ export interface ILedgerConnectorOptions {
 }
 
 class LedgerProvider extends Web3ProviderEngine {
-  constructor(opts: ILedgerConnectorOptions) {
+  constructor(opts: ILedgerProviderOptions) {
     super({
       pollingInterval: opts.pollingInterval,
     });
