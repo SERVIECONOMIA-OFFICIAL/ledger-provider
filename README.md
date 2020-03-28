@@ -1,3 +1,3 @@
-# @web3connect/ledger-provider
+# @web3modal/ledger-provider
 
 Web3 Provider for Ledger

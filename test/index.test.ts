@@ -1,5 +1,4 @@
-
-describe('@web3connect/ledger-provider', () => {
+describe('@web3modal/ledger-provider', () => {
   it('works', () => {
     // needs tests
   });
